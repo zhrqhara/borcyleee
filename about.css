@@ -1,0 +1,540 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chonburi', sans-serif;
+}
+
+body {
+    background-color: #aea3a3;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #444;
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+header nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff6600;
+    transition: width 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff6600;
+    transform: scale(1.1);
+}
+
+header nav ul li a:hover::before {
+    width: 100%;
+}
+
+/* Hero Section */
+.about-hero {
+    position: relative;
+    width: 100%;
+    height: 1000px; 
+    overflow: hidden;
+}
+
+.about-hero .hero-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: rgb(190, 167, 167);
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Our Company Section */
+.our-company, .our-vmo {
+    padding: 80px 20px;
+    background-color: rgb(188, 171, 171);
+    text-align: center;
+}
+
+.our-company h2, .our-vmo h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-info {
+    margin-bottom: 10px;
+}
+
+.footer-nav {
+    margin: 10px 0;
+}
+
+.footer-nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #d4af37;
+}
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-info {
+    margin-bottom: 10px;
+}
+
+.footer-nav {
+    margin: 10px 0;
+}
+
+.footer-nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #d4af37; /* Gold color for hover effect */
+}
+/* Vision, Mission, Objectives Section */
+.our-vmo {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.our-vmo h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.vmo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.vmo-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;
+    max-width: 30%;
+}
+
+.vmo-item h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.vmo-item p, .vmo-item ul {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.vmo-item ul {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.vmo-item li {
+    margin-bottom: 10px;
+}
+
+
+/* Divider Line */
+.section-divider {
+    width: 80%;
+    margin: 40px auto;
+    border: 0;
+    height: 2px;
+    background: #333;
+    opacity: 0.5;
+}
+
+/* About Us Section */
+.about-us {
+    position: relative;
+    text-align: center;
+    padding: 80px 20px;
+}
+/* About Us Section */
+.about-us {
+    position: relative;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.about-background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6; /* Makes the background slightly transparent */
+}
+
+.about-content {
+    z-index: 2;
+    color: rgb(206, 56, 56);
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #555;
+}
+
+.footer-info {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.social-links a {
+    color: #000;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.footer-time {
+    margin-top: 10px;
+}
+
+.time-display {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #d4af37;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #000; /* Kekal hitam */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 60px; /* Tinggi logo */
+    width: auto;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* About Us Section */
+.about-us {
+    position: relative;
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.about-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.about-background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.about-content {
+    z-index: 2;
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+
+/* Tajuk Utama */
+.about-section h2 {
+    font-size: 42px; /* Lebih besar dan menarik perhatian */
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ff6600; /* Warna menyerlah */
+}
+
+/* Teks Kandungan */
+.about-section p, .vmo-item ul li {
+    font-size: 20px; /* Sedikit lebih besar untuk mudah dibaca */
+    line-height: 1.8; /* Spasi antara baris untuk keterbacaan */
+    color: #555; /* Warna kelabu lembut */
+}
+
+/* Sub-tajuk */
+.vmo-item h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ff6600;
+}
+.about-section {
+    padding: 60px 30px; /* Ruang lebih selesa */
+    text-align: center;
+    background-color: #f9f9f9; /* Warna kontras lembut */
+}
+
+.vmo-container {
+    gap: 40px; /* Lebih ruang antara setiap bahagian */
+    margin-top: 30px; /* Ruang di atas bahagian VMO */
+}
+
+.vmo-item {
+    padding: 20px;
+    border: 1px solid #ddd; /* Tambah sempadan ringan untuk memisahkan bahagian */
+    border-radius: 8px; /* Sempadan bulat untuk gaya moden */
+    background-color: #fff; /* Latar putih untuk menonjolkan kandungan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayang untuk kesan 'pop' */
+}
+
+/* Tajuk Hover */
+.about-section h2:hover, .vmo-item h3:hover {
+    color: #e65c00; /* Warna oren lebih gelap */
+    text-decoration: underline; /* Garis bawah menarik perhatian */
+    transition: all 0.3s ease;
+}
+
+/* Teks Kandungan Hover */
+.vmo-item ul li:hover {
+    color: #333; /* Warna lebih gelap */
+    transform: translateX(5px); /* Gerakkan sedikit ke kanan */
+    transition: all 0.3s ease;
+}
+
